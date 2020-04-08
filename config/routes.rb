@@ -14,6 +14,7 @@ ShopifyApp::Engine.routes.draw do
 
   controller :callback do
     get 'auth/shopify/callback' => :callback
+    get 'auth/shopify/jwt_callback' => :jwt_callback
   end
 
   namespace :webhooks do
